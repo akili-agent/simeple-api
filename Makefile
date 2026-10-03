@@ -1,4 +1,4 @@
-APP_NAME ?= simeple-api
+APP_NAME ?= simple-api
 BIN      ?= bin/server
 PKG      ?= ./...
 

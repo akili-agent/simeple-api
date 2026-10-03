@@ -7,8 +7,8 @@ import (
 
 	"github.com/jkaninda/okapi"
 
-	"github.com/akili-agent/simeple-api/internal/handlers"
-	"github.com/akili-agent/simeple-api/internal/models"
+	"github.com/akili-agent/simple-api/internal/handlers"
+	"github.com/akili-agent/simple-api/internal/models"
 )
 
 // basePath is the versioned prefix every API route lives under.
