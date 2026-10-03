@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/akili-agent/simeple-api/internal/models"
+	"github.com/akili-agent/simple-api/internal/models"
 )
 
 // ItemStore keeps items in process memory. It is safe for concurrent use and

@@ -8,8 +8,8 @@ import (
 
 	"github.com/jkaninda/okapi"
 
-	"github.com/akili-agent/simeple-api/internal/models"
-	"github.com/akili-agent/simeple-api/internal/store"
+	"github.com/akili-agent/simple-api/internal/models"
+	"github.com/akili-agent/simple-api/internal/store"
 )
 
 // Healthz answers the liveness probe. It must stay dependency-free so an

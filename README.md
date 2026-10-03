@@ -1,4 +1,4 @@
-# simeple-api
+# simple-api
 
 A small, production-ready HTTP JSON API written in Go on top of the
 [Okapi](https://github.com/jkaninda/okapi) web framework. It ships with
@@ -67,7 +67,7 @@ make build  # static binary into ./bin/server
 
 ```sh
 make docker                       # build the image (multi-stage, non-root)
-docker run --rm -p 8080:8080 simeple-api:latest
+docker run --rm -p 8080:8080 simple-api:latest
 ```
 
 The runtime image is Alpine-based, runs as a non-root user and contains a

@@ -1,4 +1,4 @@
-module github.com/akili-agent/simeple-api
+module github.com/akili-agent/simple-api
 
 go 1.26
 

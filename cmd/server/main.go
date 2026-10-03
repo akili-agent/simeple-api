@@ -1,4 +1,4 @@
-// Package main runs the simeple-api HTTP service.
+// Package main runs the simple-api HTTP service.
 package main
 
 import (
@@ -16,7 +16,7 @@ import (
 	"github.com/jkaninda/logger"
 	"github.com/jkaninda/okapi"
 
-	"github.com/akili-agent/simeple-api/internal/routes"
+	"github.com/akili-agent/simple-api/internal/routes"
 )
 
 // version is stamped into the OpenAPI document; overridden at release time
@@ -57,7 +57,7 @@ func run() error {
 	cfg := loadConfig()
 
 	log := logger.New(logger.WithLevel(logger.LogLevel(cfg.LogLevel)))
-	log.Info("starting simeple-api", "port", cfg.Port, "logLevel", cfg.LogLevel, "version", version)
+	log.Info("starting simple-api", "port", cfg.Port, "logLevel", cfg.LogLevel, "version", version)
 
 	// Okapi with conservative server timeouts; routes are declared as data in
 	// internal/routes so they double as the OpenAPI definition.
@@ -69,7 +69,7 @@ func run() error {
 		okapi.WithLogger(log.Logger),
 	)
 	o.WithOpenAPIDocs(okapi.OpenAPI{
-		Title:       "simeple-api",
+		Title:       "simple-api",
 		Summary:     "A simple, production-ready Okapi API service",
 		Description: "Example JSON API scaffolded with the Okapi web framework.",
 		Version:     version,

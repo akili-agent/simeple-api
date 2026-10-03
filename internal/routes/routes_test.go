@@ -9,14 +9,14 @@ import (
 
 	"github.com/jkaninda/okapi"
 
-	"github.com/akili-agent/simeple-api/internal/routes"
+	"github.com/akili-agent/simple-api/internal/routes"
 )
 
 // newApp registers the production routing table on a fresh Okapi instance.
 func newApp() *okapi.Okapi {
 	o := okapi.New(okapi.WithAccessLogDisabled())
 	okapi.RegisterRoutes(o, routes.Routes(o))
-	o.WithOpenAPIDocs(okapi.OpenAPI{Title: "simeple-api", Version: "test", UI: okapi.ScalarUI})
+	o.WithOpenAPIDocs(okapi.OpenAPI{Title: "simple-api", Version: "test", UI: okapi.ScalarUI})
 	return o
 }
 
