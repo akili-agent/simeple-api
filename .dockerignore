@@ -1,0 +1,18 @@
+# Version control and CI metadata
+.git
+.gitea
+.github
+
+# Build artifacts
+bin/
+*.test
+*.out
+
+# Editor / OS noise
+.idea/
+.vscode/
+.DS_Store
+
+# Docker context itself
+Dockerfile
+.dockerignore
